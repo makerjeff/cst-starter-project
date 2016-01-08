@@ -1,0 +1,15 @@
+<!-- partial-home.html -->
+<!-- THIS GETS LOADED AS THE MAIN PAGE -->
+<!-- partials don't need HTML5 boiler tags -->
+<!-- controller for ng-repeat defined in the state section (core.JS) -->
+
+<div class="jumbotron text-center">
+    <h1> The Homey Page</h1>
+    <p>This page demonstrates <span class="text-danger"> nested</span> views.</p>
+
+    <!-- some basic buttons: 'ui-sref' instead of 'href' for ui-router -->
+    <a ui-sref=".list" class="btn btn-primary">List</a>
+    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
+</div>
+
+<div ui-view></div>
