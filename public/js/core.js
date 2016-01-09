@@ -19,37 +19,38 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
     });
 
     //nested state with custom controller
-    $stateProvider.state('home.list', {
-        url:'/list',
-        templateUrl: 'partials/partial-home-list.html',
-        controller: function($scope) {
-            $scope.dogs = ['Bernese', 'Husky', 'GoldenDoodle'];
-        }
+    $stateProvider.state('home.videos', {
+        url:'/videos',
+        templateUrl: 'partials/partial-home-videos.html',
+        controller: 'videosController'
+        //controller: function($scope) {
+        //    $scope.dogs = ['Bernese', 'Husky', 'GoldenDoodle'];
+        //}
     });
 
     //nested state with random string data
-    $stateProvider.state('home.paragraph', {
-        url: '/paragraph',
-        template: 'I could sure use a nice drink right now.'
+    $stateProvider.state('home.projects', {
+        url: '/projects',
+        template: 'This is where projects or details can be.'
 
     });
 
     //about
-    $stateProvider.state('about', {
-        url:'/about',
+    $stateProvider.state('lists', {
+        url:'/lists',
         views: {
             //main template place here (relatively named)
-            '': {templateUrl: 'partials/partial-about.html'},
+            '': {templateUrl: 'partials/partial-lists.html'},
 
             // child views defined here, absolutely named
             //'columnOne@about': {
             //    template: 'Column One Text!'
             //},
-            'columnOne@about': {
+            'columnOne@lists': {
                 templateUrl: 'templates/left-table-data.html',
                 controller: 'carController'
             },
-            'columnTwo@about': {
+            'columnTwo@lists': {
                 templateUrl: 'templates/right-table-data.html',
                 controller: 'mainController'
             }
@@ -86,6 +87,14 @@ app.controller('mainController', function($scope, $timeout){
     // TODO TWITTER FIX
     //$timeout = twttr.widgets.load();
 });
+
+// == Videos Controller ==
+app.controller('videosController', ['$scope','$http', function($scope, $http){
+    $http.get('./models/videos.json').then(function(response){
+        $scope.videos = response.data;
+        console.log(response.data);
+    });
+}]);
 
 // == Car Specific Controller ==
 app.controller('carController', ['$scope','$timeout', function($scope, $timeout){

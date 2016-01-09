@@ -11,6 +11,7 @@
     "colors":"^1.1.2",
     "body-parser": "^1.14.2",
     "basic-auth":"^1.0.3",
-    "socket.io":"latest"
+    "socket.io":"latest",
+    "serialport":"latest"
   }
 }

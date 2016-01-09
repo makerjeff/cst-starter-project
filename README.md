@@ -9,3 +9,8 @@ Work in progress starter project template for 180LA 'CoolShitTeam' projects.
 - [Angular UI-Router](http://angular-ui.github.io/ui-router/site/#/api/ui.router)
 - [Socket.IO](http://socket.io/)
 - [Colors](https://www.npmjs.com/package/colors)
+- [SerialPort](https://www.npmjs.com/package/serialport) (Bonus for IoT)
+
+###Getting Started
+1. Install Nodemon with ``` npm install -g nodemon ``` (-g will install globally).
+2. Run server with ``` nodemon server.js <port> ```.  If no port is defined, defaults to ```8000```.

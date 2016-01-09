@@ -4,12 +4,13 @@
 <!-- controller for ng-repeat defined in the state section (core.JS) -->
 
 <div class="jumbotron text-center">
-    <h1> The Homey Page</h1>
-    <p>This page demonstrates <span class="text-danger"> nested</span> views.</p>
+    <h1>Cool Sh*t Team Projects</h1>
+    <p> This is the beginning of a SPA template for all our cool sh*t projects.</p>
+    <!--<p>This page demonstrates <span class="text-danger"> nested</span> views.</p>-->
 
-    <!-- some basic buttons: 'ui-sref' instead of 'href' for ui-router -->
-    <a ui-sref=".list" class="btn btn-primary">List</a>
-    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
+    <!-- some basic buttons: 'ui-sref' instead of 'href' for ui-router, also append the '.' -->
+    <a ui-sref=".videos" class="btn btn-danger">Videos</a>
+    <a ui-sref=".projects" class="btn btn-primary">Projects</a>
 </div>
 
 <div ui-view></div>
