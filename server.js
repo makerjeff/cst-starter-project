@@ -8,12 +8,16 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var colors = require('colors');
+var favicon = require('serve-favicon');
 
 // ===== GLOBALS =====
 var app = express();        //init express
 var port = process.argv[2]; //input port at launch
 
 // ===== MIDDLEWARE =====
+//serve favicon
+app.use(favicon(__dirname + '/public/favicon.ico'));
+
 //serve static files using express
 app.use(express.static(__dirname + '/public'));
 

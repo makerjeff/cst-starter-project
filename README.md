@@ -1,11 +1,12 @@
 #CST Starter Project v0.0.2
-2015.JAN.11: 11:05AM
+2015.JAN.11: 11:56AM <br>
 Work in progress starter project template for 180LA 'CoolShitTeam' projects.
 
 ###Stack Technologies
 - [Express](http://expressjs.com/)
 - [Mongoose (MongoDB middleware)](http://mongoosejs.com/)
 - [Body Parser](https://www.npmjs.com/package/body-parser)
+- [Serve Favicon](https://github.com/expressjs/serve-favicon) (new!)
 - [AngularJS](https://angularjs.org/)
 - [Angular UI-Router](http://angular-ui.github.io/ui-router/site/#/api/ui.router)
 - [Socket.IO](http://socket.io/)
