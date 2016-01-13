@@ -1,5 +1,5 @@
 #CST Starter Project v0.0.2
-2016.JAN.12: 11:42AM <br>
+2016.JAN.13: 11:26am <br>
 Work in progress starter project template for 180LA 'CoolShitTeam' projects.
 
 ###Stack Technologies
