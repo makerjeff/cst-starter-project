@@ -1,5 +1,6 @@
 /*STYLE.CSS - MAIN FILE*/
 
+$red180: rgba(240,0,0,1.0);
 $font-stack: "Montserrat", sans-serif;
 
 body {
@@ -7,4 +8,24 @@ body {
     font-family: $font-stack;
     font-weight: 100;
   }
+}
+
+// ===== IMAGE CROPPING =====
+
+.one_eighty_logo_img {
+  position: absolute;
+  background-image: url(../img/180Logo_outline.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+#logo {
+  width: 300px;
+  height: 300px;
+  top: 0px;
+  left: 0px;
+}
+
+.nav_bar_logo {
+  width: 120px;
 }
