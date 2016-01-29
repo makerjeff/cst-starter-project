@@ -1,0 +1,44 @@
+/*media.css, responsible for media queries*/
+
+/* mobile state -- styles the screen, 'and' max-width */
+@media only screen and (max-width: 568px) {
+  * {
+    color: $green;
+  }
+
+  #stripes_container {
+    width: 240px;
+    height: 320px;
+  }
+
+  .airmail_stripes_red {
+    height: 10px;
+  }
+  .airmail_stripes_white {
+    height: 10px;
+  }
+  .airmail_stripes_blue {
+    height: 10px;
+  }
+}
+
+/* tablet state -- styles the screen, 'and' min-width */
+@media only screen and (min-width: 569px) and (max-width: 1024px) {
+  * {
+    color: $blue;
+  }
+
+  #stripes_container {
+    width: 480px;
+    height: 640px;
+  }
+
+}
+
+
+/* covers anything above 1024px */
+@media only screen and (min-width: 1025px) {
+  * {
+    color: $red;
+  }
+}
