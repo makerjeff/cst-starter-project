@@ -1,6 +1,6 @@
-#CST Starter Project v0.0.2
-2016.JAN.13: 11:26am <br>
-Work in progress starter project template for 180LA 'CoolShitTeam' projects.
+#CST Starter Project v0.0.3
+2016.JAN.29: 10:42am <br>
+Work in progress starter project template for 180LA 'CoolShitTeam' projects. (SXSW Edition)
 
 ###Stack Technologies
 - [Express](http://expressjs.com/)

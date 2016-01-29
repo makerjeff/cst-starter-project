@@ -1,7 +1,7 @@
 {
   "name":"cst-starter-project",
-  "description":"WIP starter project template for 180LA 'CoolShitTeam' projects.",
-  "version":"0.0.2",
+  "description":"WIP starter project template for 180LA 'CoolShitTeam' projects. (SXSW Edition)",
+  "version":"0.0.3",
   "private":"true",
   "dependencies": {
     "express":"^4.13.3",
