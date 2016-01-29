@@ -7,13 +7,20 @@ body h1 {
   position: absolute;
   background-image: url(../img/180Logo_outline.svg);
   background-repeat: no-repeat;
-  background-position: 0px 0px; }
+  background-size: 400px;
+  background-position: -143px -110px;
+  width: 120px;
+  height: 120px; }
+
+.clear {
+  border: 0px; }
 
 #logo {
   width: 300px;
   height: 300px;
   top: 0px;
-  left: 0px; }
+  left: 0px;
+  border: none; }
 
 .nav_bar_logo {
   width: 120px; }

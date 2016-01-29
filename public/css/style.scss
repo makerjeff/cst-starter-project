@@ -1,5 +1,6 @@
 /*STYLE.CSS - MAIN FILE*/
 
+// GLOBAL VARS
 $red180: rgba(240,0,0,1.0);
 $font-stack: "Montserrat", sans-serif;
 
@@ -16,7 +17,15 @@ body {
   position: absolute;
   background-image: url(../img/180Logo_outline.svg);
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-size: 400px;
+  background-position: -143px -110px;
+
+  width: 120px;
+  height: 120px;
+}
+
+.clear {
+  border: 0px;
 }
 
 #logo {
@@ -24,6 +33,7 @@ body {
   height: 300px;
   top: 0px;
   left: 0px;
+  border: none;
 }
 
 .nav_bar_logo {
